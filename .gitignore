@@ -30,6 +30,8 @@
 .pub/
 build/
 linux/
+# Library package https://dart.dev/tools/pub/glossary#library-package
+pubspec.lock
 
 # Android related
 **/android/**/gradle-wrapper.jar
