@@ -8,24 +8,20 @@ import 'roles/light.dart';
 ///
 /// This class is abstract so it cannot be instantiated.
 /// In reality, this class is an equivalent to [ThemeData], not [Theme].
-abstract class NordTheme {
-  static final _lightRoles = NordLightColorRoles(),
-      _darkRoles = NordDarkColorRoles();
+abstract class GruvboxTheme {
+  static final _lightRoles = GruvboxLightColorRoles(),
+      _darkRoles = GruvboxDarkColorRoles();
 
   static final _lightTheme = ThemeData.light(), _darkTheme = ThemeData.dark();
 
-  /// A light, north-bluish theme.
   static ThemeData light() => _merge(_lightTheme, _lightRoles);
 
-  /// A dark, north-bluish theme.
   static ThemeData dark() => _merge(_darkTheme, _darkRoles);
 
-  static ThemeData _merge(ThemeData original, NordColorRoles roles) =>
+  static ThemeData _merge(ThemeData original, GruvboxColorRoles roles) =>
       original.copyWith(
-        colorScheme: roles.colorScheme,
         brightness: roles.brightness,
         primaryColor: roles.primary,
-        accentColor: roles.accent,
         canvasColor: roles.canvas,
         shadowColor: roles.shadow,
         scaffoldBackgroundColor: roles.scaffoldBackground,
@@ -41,7 +37,6 @@ abstract class NordTheme {
         selectedRowColor: roles.selectedRow,
         unselectedWidgetColor: roles.unselectedWidget,
         disabledColor: roles.disabled,
-        buttonColor: roles.button,
         textSelectionTheme: roles.textSelection,
         textButtonTheme: TextButtonThemeData(style: roles.textButton),
         elevatedButtonTheme:
@@ -51,5 +46,6 @@ abstract class NordTheme {
         switchTheme: roles.switchTheme,
         navigationRailTheme: roles.navigationRail,
         floatingActionButtonTheme: roles.floatingActionButton,
+        colorScheme: roles.colorScheme.copyWith(secondary: roles.accent),
       );
 }

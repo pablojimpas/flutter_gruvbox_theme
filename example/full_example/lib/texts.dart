@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
 final texts = [
-  Text('Example text.'),
-  SelectableText('Selectable text.'),
+  const Text('Example text.'),
+  const SelectableText('Selectable text.'),
 ];

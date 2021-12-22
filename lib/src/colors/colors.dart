@@ -1,79 +1,50 @@
 import 'package:flutter/material.dart';
 
-import 'color_codes.dart';
-import 'palettes/palettes.dart';
-
-/// The colors of the Nord theme.
+/// The colors of the Gruvbox theme.
 ///
-/// [NordColors] is an abstract class so it can't be instantiated.
+/// [GruvboxColors] is an abstract class so it can't be instantiated.
 /// By default, the colors are with an alpha value of 0xFF.
-/// The main source: https://www.nordtheme.com/docs/colors-and-palettes.
-abstract class NordColors {
-  /// Polar Night is composed of four dark grey colors.
-  ///
-  /// The Nord light theme is based on this palette.
-  static const polarNight = NordPolarNight();
+/// The main source: https://github.com/morhetz/gruvbox.
+abstract class GruvboxColors {
+  static const dark0Hard = Color(0xFF1d2021);
+  static const dark0 = Color(0xFF282828);
+  static const dark0Soft = Color(0xFF32302f);
+  static const dark1 = Color(0xFF3c3836);
+  static const dark2 = Color(0xFF504945);
+  static const dark3 = Color(0xFF665c54);
+  static const dark4 = Color(0xFF7c6f64);
 
-  /// A palette made up of three bright grey colors.
-  ///
-  /// The Nord light theme is based on this palette.
-  static const snowStorm = NordSnowStorm();
+  static const gray = Color(0xFF928374);
 
-  /// The heart palette of Nord, a group of four bluish colors.
-  ///
-  /// The color schemes of both light and dark themes are based on this palette.
-  static const frost = NordFrost();
+  static const light0Hard = Color(0xFFf9f5d7);
+  static const light0 = Color(0xFFfbf1c7);
+  static const light0Soft = Color(0xFFf2e5bc);
+  static const light1 = Color(0xFFebdbb2);
+  static const light2 = Color(0xFFd5c4a1);
+  static const light3 = Color(0xFFbdae93);
+  static const light4 = Color(0xFFa89984);
 
-  /// Aurora consists of five vivid, colorful components reminiscent of polar
-  /// lights.
-  static const aurora = NordAurora();
+  static const brightRed = Color(0xFFfb4934);
+  static const brightGreen = Color(0xFFb8bb26);
+  static const brightYellow = Color(0xFFfabd2f);
+  static const brightBlue = Color(0xFF83a598);
+  static const brightPurple = Color(0xFFd3869b);
+  static const brightAqua = Color(0xFF8ec07c);
+  static const brightOrange = Color(0xFFfe8019);
 
-  /// The origin color or the Polar Night palette.
-  static const $0 = const Color(NordColorCodes.$0);
+  static const neutralRed = Color(0xFFcc241d);
+  static const neutralGreen = Color(0xFF98971a);
+  static const neutralYellow = Color(0xFFd79921);
+  static const neutralBlue = Color(0xFF458588);
+  static const neutralPurple = Color(0xFFb16286);
+  static const neutralAqua = Color(0xFF689d6a);
+  static const neutralOrange = Color(0xFFd65d0e);
 
-  /// A brighter shade color based on [$0].
-  static const $1 = const Color(NordColorCodes.$1);
-
-  /// An even more brighter shade color of [$0]].
-  static const $2 = const Color(NordColorCodes.$2);
-
-  /// The brightest shade color based on [$0].
-  static const $3 = const Color(NordColorCodes.$3);
-
-  /// The origin color or the Snow Storm palette.
-  static const $4 = const Color(NordColorCodes.$4);
-
-  /// A brighter shade color of [$4].
-  static const $5 = const Color(NordColorCodes.$5);
-
-  /// The brightest shade color based on [$4].
-  static const $6 = const Color(NordColorCodes.$6);
-
-  /// A calm and highly contrasted color reminiscent of frozen polar water.
-  static const $7 = const Color(NordColorCodes.$7);
-
-  /// The bright and shiny primary accent color reminiscent of pure and clear
-  /// ice.
-  static const $8 = const Color(NordColorCodes.$8);
-
-  /// A more darkened and less saturated color reminiscent of arctic waters.
-  static const $9 = const Color(NordColorCodes.$9);
-
-  /// A dark and intensive color reminiscent of the deep arctic ocean.
-  static const $10 = const Color(NordColorCodes.$10);
-
-  /// A vermilion, yet soothing color.
-  static const $11 = const Color(NordColorCodes.$11);
-
-  /// A saturated, imposing orange color.
-  static const $12 = const Color(NordColorCodes.$12);
-
-  /// A calming yellow color.
-  static const $13 = const Color(NordColorCodes.$13);
-
-  /// A nice, neither too bright nor too dark, green color.
-  static const $14 = const Color(NordColorCodes.$14);
-
-  /// A dark, dull violet color.
-  static const $15 = const Color(NordColorCodes.$15);
+  static const fadedRed = Color(0xFF9d0006);
+  static const fadedGreen = Color(0xFF79740e);
+  static const fadedYellow = Color(0xFFb57614);
+  static const fadedBlue = Color(0xFF076678);
+  static const fadedPurple = Color(0xFF8f3f71);
+  static const fadedAqua = Color(0xFF427b58);
+  static const fadedOrange = Color(0xFFaf3a03);
 }

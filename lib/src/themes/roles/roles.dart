@@ -1,21 +1,17 @@
 import 'package:flutter/material.dart';
 
-import 'package:flutter_nord_theme/flutter_nord_theme.dart';
+import 'package:flutter_gruvbox_theme/flutter_gruvbox_theme.dart';
 import 'light.dart';
 
 /// This class describes the role of each color.
 ///
-/// Based on https://www.nordtheme.com/docs/colors-and-palettes using the
-/// corresponding theme. When it is referenced as a source, it means that the
-/// page has been investigated with the dev tools of a web browser. Else, the
-/// source is just the doc.
 ///
 /// Contains most of the [Color] and sub-themes parameters of [ThemeData]
 /// (removing the "-Color" or "-Theme" part in their names).
 /// Values that depend on the brightness of the theme (e.g. "primaryColorLight")
 /// are not referenced here (for example [ThemeData.primaryColorLight]'s value
-/// is actually set in [NordLightColorRoles.primary]).
-abstract class NordColorRoles {
+/// is actually set in [GruvboxLightColorRoles.primary]).
+abstract class GruvboxColorRoles {
   /// This set of color is at the base of the theme.
   ///
   /// Most of the widgets' theme elements can be set from the color scheme, and
@@ -53,7 +49,7 @@ abstract class NordColorRoles {
   Color get text;
 
   /// A light text, used on vivid backgrounds.
-  final Color _lightText = NordColors.snowStorm.lightest;
+  final Color _lightText = GruvboxColors.light0;
 
   /// The highlight color used when the text of a [SelectableText] is selected.
   ///
@@ -70,7 +66,7 @@ abstract class NordColorRoles {
   Color get splash;
 
   /// The color of shadows (e.g. for [Card] widgets).
-  final Color shadow = Color(0x590f1115);
+  Color get shadow;
 
   /// A color that contrasts with [primary], e.g. used as the remaining part of
   /// a progress bar.
@@ -127,8 +123,7 @@ abstract class NordColorRoles {
   /// The color to use for input validation errors, e.g. in [TextField] fields.
   ///
   /// It is red for both dark and light theme.
-  /// Source: Nord's doc.
-  final Color error = NordColors.aurora.red;
+  final Color error = GruvboxColors.neutralRed;
 
   /// Used for [Switch], [Radio] and [Checkbox] widgets, among others.
   Color get toggleableActive => primary;
@@ -141,8 +136,9 @@ abstract class NordColorRoles {
         }),
         backgroundColor: MaterialStateProperty.all<Color>(Colors.transparent),
         overlayColor: MaterialStateProperty.resolveWith<Color?>((states) {
-          if (states.contains(MaterialState.hovered))
+          if (states.contains(MaterialState.hovered)) {
             return button.withOpacity(0.04);
+          }
           if (states.contains(MaterialState.focused) ||
               states.contains(MaterialState.pressed)) {
             return button.withOpacity(0.12);
@@ -155,7 +151,7 @@ abstract class NordColorRoles {
   ButtonStyle get elevatedButton => ButtonStyle(
         foregroundColor: MaterialStateProperty.resolveWith<Color?>((states) {
           if (states.contains(MaterialState.disabled)) return null;
-          return NordColors.snowStorm.lightest;
+          return GruvboxColors.light0;
         }),
         backgroundColor: MaterialStateProperty.resolveWith<Color?>((states) {
           if (states.contains(MaterialState.disabled)) return null;
@@ -192,12 +188,12 @@ abstract class NordColorRoles {
   NavigationRailThemeData? get navigationRail {
     return NavigationRailThemeData(
       backgroundColor: bottomAppBar,
-      unselectedLabelTextStyle: TextStyle(fontSize: 10),
+      unselectedLabelTextStyle: const TextStyle(fontSize: 10),
       selectedLabelTextStyle: TextStyle(
         fontSize: 10,
         color: primary,
       ),
-      unselectedIconTheme: IconThemeData(),
+      unselectedIconTheme: const IconThemeData(),
       selectedIconTheme: IconThemeData(color: primary),
     );
   }
@@ -205,7 +201,7 @@ abstract class NordColorRoles {
   /// The theme for [FloatingActionButton] widgets.
   FloatingActionButtonThemeData? get floatingActionButton {
     return FloatingActionButtonThemeData(
-      foregroundColor: NordColors.snowStorm.lightest,
+      foregroundColor: GruvboxColors.light0,
       backgroundColor: primary,
     );
   }

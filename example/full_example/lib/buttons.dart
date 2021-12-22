@@ -1,27 +1,27 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_nord_theme/flutter_nord_theme.dart';
+import 'package:flutter_gruvbox_theme/flutter_gruvbox_theme.dart';
 
 final List<Widget> buttons = [
   TextButton(
-    child: Text('TextButton'),
-    onPressed: () => null,
+    child: const Text('TextButton'),
+    onPressed: () => {},
   ),
   ElevatedButton(
-    child: Text('ElevatedButton'),
-    onPressed: () => null,
+    child: const Text('ElevatedButton'),
+    onPressed: () => {},
   ),
   OutlinedButton(
-    child: Text('OutlinedButton'),
-    onPressed: () => null,
+    child: const Text('OutlinedButton'),
+    onPressed: () => {},
   ),
   ElevatedButton(
-    child: Text('Custom button'),
+    child: const Text('Custom button'),
     style: ElevatedButton.styleFrom(
-      primary: NordColors.aurora.red,
+      primary: GruvboxColors.neutralRed,
     ),
-    onPressed: () => null,
+    onPressed: () => {},
   ),
-  TextButton(child: Text('TextButton'), onPressed: null),
-  ElevatedButton(child: Text('ElevatedButton'), onPressed: null),
-  OutlinedButton(child: Text('OutlinedButton'), onPressed: null),
+  const TextButton(child: Text('TextButton'), onPressed: null),
+  const ElevatedButton(child: Text('ElevatedButton'), onPressed: null),
+  const OutlinedButton(child: Text('OutlinedButton'), onPressed: null),
 ];
