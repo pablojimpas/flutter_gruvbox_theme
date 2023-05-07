@@ -15,7 +15,7 @@ To use this package, first add `flutter_gruvbox_theme` as a
 
 ```yaml
 dependencies:
-  flutter_gruvbox_theme: <lastest version>
+  flutter_gruvbox_theme: <latest version>
 ```
 
 ## Usage

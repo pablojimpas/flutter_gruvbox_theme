@@ -16,6 +16,8 @@
   ],
   "useGitignore": true,
   "words": [
-    "flutter_gruvbox_theme"
+    "flutter_gruvbox_theme",
+    "Gruvbox",
+    "nord"
   ]
 }
