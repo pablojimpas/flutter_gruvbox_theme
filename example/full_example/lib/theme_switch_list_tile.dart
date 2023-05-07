@@ -4,10 +4,10 @@ import 'package:flutter_gruvbox_theme/flutter_gruvbox_theme.dart';
 import 'theme.dart';
 
 class ThemeSwitchListTile extends StatefulWidget {
-  const ThemeSwitchListTile({Key? key}) : super(key: key);
+  const ThemeSwitchListTile({super.key});
 
   @override
-  _ThemeSwitchListTileState createState() => _ThemeSwitchListTileState();
+  State<ThemeSwitchListTile> createState() => _ThemeSwitchListTileState();
 }
 
 class _ThemeSwitchListTileState extends State<ThemeSwitchListTile> {

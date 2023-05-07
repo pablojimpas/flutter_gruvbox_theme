@@ -7,10 +7,10 @@ final List<Widget> switches = [
 ];
 
 class ToggleableSwitch extends StatefulWidget {
-  const ToggleableSwitch({Key? key}) : super(key: key);
+  const ToggleableSwitch({super.key});
 
   @override
-  _ToggleableSwitchState createState() => _ToggleableSwitchState();
+  State<ToggleableSwitch> createState() => _ToggleableSwitchState();
 }
 
 class _ToggleableSwitchState extends State<ToggleableSwitch> {

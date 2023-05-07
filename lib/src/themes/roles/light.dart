@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:flutter_gruvbox_theme/flutter_gruvbox_theme.dart';
-import 'roles.dart';
+import 'package:flutter_gruvbox_theme/src/themes/roles/roles.dart';
 
 class GruvboxLightColorRoles extends GruvboxColorRoles {
   @override

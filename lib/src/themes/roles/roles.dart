@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:flutter_gruvbox_theme/flutter_gruvbox_theme.dart';
-import 'light.dart';
+import 'package:flutter_gruvbox_theme/src/themes/roles/light.dart';
 
 /// This class describes the role of each color.
 ///
@@ -18,9 +18,7 @@ abstract class GruvboxColorRoles {
   /// in theory, all the other [ThemeData] properties are just overrides.
   ColorScheme get colorScheme => ColorScheme(
         primary: primary,
-        primaryVariant: primary,
         secondary: secondary,
-        secondaryVariant: secondary,
         surface: card,
         background: background,
         error: error,
@@ -161,8 +159,9 @@ abstract class GruvboxColorRoles {
 
   /// The theme for [OutlinedButton] widgets.
   ButtonStyle get outlinedButton => ButtonStyle(
-        foregroundColor: MaterialStateProperty.resolveWith<Color?>((states) =>
-            states.contains(MaterialState.disabled) ? null : button),
+        foregroundColor: MaterialStateProperty.resolveWith<Color?>(
+          (states) => states.contains(MaterialState.disabled) ? null : button,
+        ),
         backgroundColor: MaterialStateProperty.all<Color>(Colors.transparent),
         overlayColor: MaterialStateProperty.resolveWith<Color?>((states) {
           if (states.contains(MaterialState.hovered)) {

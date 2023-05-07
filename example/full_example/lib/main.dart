@@ -1,21 +1,20 @@
 import 'package:flutter/material.dart';
 
-import 'theme.dart';
-import 'theme_switch_list_tile.dart';
-
-import 'texts.dart';
 import 'buttons.dart';
 import 'switches.dart';
+import 'texts.dart';
+import 'theme.dart';
+import 'theme_switch_list_tile.dart';
 
 void main() {
   runApp(const MyApp());
 }
 
 class MyApp extends StatefulWidget {
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({super.key});
 
   @override
-  _MyAppState createState() => _MyAppState();
+  State<MyApp> createState() => _MyAppState();
 }
 
 class _MyAppState extends State<MyApp> {
@@ -35,7 +34,7 @@ class _MyAppState extends State<MyApp> {
           appBar: AppBar(title: const Text('Demo app')),
           drawer: const Drawer(child: ThemeSwitchListTile()),
           body: Padding(
-            padding: const EdgeInsets.all(20.0),
+            padding: const EdgeInsets.all(20),
             child: Wrap(
               spacing: 15,
               runSpacing: 15,

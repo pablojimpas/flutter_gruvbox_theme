@@ -11,16 +11,18 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({super.key});
 
   @override
-  Widget build(BuildContext context) => MaterialApp(
-        themeMode: ThemeMode.light, // Or [ThemeMode.dark]
-        theme: GruvboxTheme.light(),
-        darkTheme: GruvboxTheme.dark(),
-        home: Scaffold(
-          appBar: AppBar(title: const Text('Title')),
-          body: const Center(child: Text('Example text.')),
-        ),
-      );
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      themeMode: ThemeMode.light, // Or [ThemeMode.dark]
+      theme: GruvboxTheme.light(),
+      darkTheme: GruvboxTheme.dark(),
+      home: Scaffold(
+        appBar: AppBar(title: const Text('Title')),
+        body: const Center(child: Text('Example text.')),
+      ),
+    );
+  }
 }

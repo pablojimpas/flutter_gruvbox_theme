@@ -15,13 +15,13 @@ final List<Widget> buttons = [
     onPressed: () => {},
   ),
   ElevatedButton(
-    child: const Text('Custom button'),
     style: ElevatedButton.styleFrom(
-      primary: GruvboxColors.neutralRed,
+      backgroundColor: GruvboxColors.neutralRed,
     ),
     onPressed: () => {},
+    child: const Text('Custom button'),
   ),
-  const TextButton(child: Text('TextButton'), onPressed: null),
-  const ElevatedButton(child: Text('ElevatedButton'), onPressed: null),
-  const OutlinedButton(child: Text('OutlinedButton'), onPressed: null),
+  const TextButton(onPressed: null, child: Text('TextButton')),
+  const ElevatedButton(onPressed: null, child: Text('ElevatedButton')),
+  const OutlinedButton(onPressed: null, child: Text('OutlinedButton')),
 ];
