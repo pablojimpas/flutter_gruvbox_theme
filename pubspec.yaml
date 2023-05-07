@@ -4,8 +4,8 @@ version: 0.1.0
 repository: https://github.com/pablojimpas/flutter_gruvbox_theme
 
 environment:
-  sdk: '>=2.19.0 <3.0.0'
-  flutter: '>=3.7.0'
+  sdk: ">=2.19.0 <3.0.0"
+  flutter: ">=3.7.0"
 
 dependencies:
   flutter:
@@ -17,3 +17,9 @@ dev_dependencies:
   very_good_analysis: ^4.0.0+1
 
 flutter:
+
+screenshots:
+  - description: "Light theme example"
+    path: doc/screenshots/light-theme.png
+  - description: "Dark theme example"
+    path: doc/screenshots/dark-theme.png
