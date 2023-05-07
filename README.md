@@ -7,10 +7,10 @@ Retro groove theme for Flutter, based on the
 [Gruvbox][gruvbox-color-scheme-link] color scheme.
 
 <p>
-  <img src="./doc/screenshots/light-theme.png"
+  <img src="https://raw.githubusercontent.com/pablojimpas/flutter_gruvbox_theme/main/doc/screenshots/light-theme.png"
     alt="Light theme example" height="200"/>
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="./doc/screenshots/dark-theme.png"
+  <img src="https://raw.githubusercontent.com/pablojimpas/flutter_gruvbox_theme/main/doc/screenshots/dark-theme.png"
    alt="Dark theme example" height="200"/>
 </p>
 

@@ -1,7 +1,17 @@
 name: flutter_gruvbox_theme
-description: Retro groove theme for Flutter, based on the Gruvbox color scheme.
 version: 0.1.0
+description: Retro groove theme for Flutter, based on the Gruvbox color scheme.
+homepage: https://www.agro-nexus.com/open-source/
 repository: https://github.com/pablojimpas/flutter_gruvbox_theme
+issue_tracker: https://github.com/pablojimpas/flutter_gruvbox_theme/issues
+funding:
+  - https://pablo.jimpas.me/contact
+  - https://www.agro-nexus.com/#contacto
+screenshots:
+  - description: "Light theme example"
+    path: doc/screenshots/light-theme.png
+  - description: "Dark theme example"
+    path: doc/screenshots/dark-theme.png
 
 environment:
   sdk: ">=2.19.0 <3.0.0"
@@ -17,9 +27,3 @@ dev_dependencies:
   very_good_analysis: ^4.0.0+1
 
 flutter:
-
-screenshots:
-  - description: "Light theme example"
-    path: doc/screenshots/light-theme.png
-  - description: "Dark theme example"
-    path: doc/screenshots/dark-theme.png
