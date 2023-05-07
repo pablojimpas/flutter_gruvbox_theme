@@ -15,6 +15,7 @@ Retro groove theme for Flutter, based on the
 </p>
 
 > Initially derived from [flutter_nord_theme][flutter-nord-theme-link].
+> Copyright (c) 2021 Firefnix
 
 ## Getting started
 
@@ -60,10 +61,11 @@ class MyApp extends StatelessWidget {
 ## License
 
 This package is licensed under the permissive [MIT License][mit-license-link].
-See the [`LICENSE`](./LICENSE) file in this repository for details.
+See the [`LICENSE`][license-link] file in this repository to get a full copy.
 
 [license_badge]: https://img.shields.io/badge/license-MIT-blue.svg
 [license_link]: https://opensource.org/licenses/MIT
+[license-link]: https://raw.githubusercontent.com/pablojimpas/flutter_gruvbox_theme/main/LICENSE
 [very_good_analysis_badge]: https://img.shields.io/badge/style-very_good_analysis-B22C89.svg
 [very_good_analysis_link]: https://pub.dev/packages/very_good_analysis
 [gruvbox-color-scheme-link]: https://github.com/morhetz/gruvbox
