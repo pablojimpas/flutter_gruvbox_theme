@@ -1,5 +1,6 @@
 # Gruvbox Theme for Flutter
 
+[![pub package][pub_badge]][pub_link]
 [![style: very good analysis][very_good_analysis_badge]][very_good_analysis_link]
 [![License: MIT][license_badge]][license_link]
 
@@ -66,6 +67,8 @@ See the [`LICENSE`][license-link] file in this repository to get a full copy.
 [license_badge]: https://img.shields.io/badge/license-MIT-blue.svg
 [license_link]: https://opensource.org/licenses/MIT
 [license-link]: https://raw.githubusercontent.com/pablojimpas/flutter_gruvbox_theme/main/LICENSE
+[pub_badge]: https://img.shields.io/pub/v/flutter_gruvbox_theme.svg
+[pub_link]: https://pub.dartlang.org/packages/flutter_gruvbox_theme
 [very_good_analysis_badge]: https://img.shields.io/badge/style-very_good_analysis-B22C89.svg
 [very_good_analysis_link]: https://pub.dev/packages/very_good_analysis
 [gruvbox-color-scheme-link]: https://github.com/morhetz/gruvbox
